@@ -16,7 +16,6 @@ class SongsController < ApplicationController
     if @song.nil?
       redirect_to artist_songs_path(@artist)
     end 
-      
   end
 
   def new
