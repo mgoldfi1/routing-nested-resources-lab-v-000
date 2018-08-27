@@ -160,3 +160,8 @@ Completed 404 Not Found in 8ms (ActiveRecord: 0.1ms)
   [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "artist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "I'm def not Chris Gaines, Everyone haha what are you talking about?"], ["artist_id", 5], ["created_at", "2018-08-27 17:25:49.016096"], ["updated_at", "2018-08-27 17:25:49.016096"]]
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"abc"}
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 10ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
